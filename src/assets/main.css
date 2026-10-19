@@ -1,0 +1,40 @@
+@import './base.css';
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+#app {
+  max-width: fit-content;
+  margin: 0 ;
+  
+  font-weight: normal;
+  
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: rgb(255, 253, 253);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  ul{
+     a:hover {
+    background-color: hsl(0, 2%, 54%);
+    border-radius: 5px;
+    }
+  }
+ 
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  
+}

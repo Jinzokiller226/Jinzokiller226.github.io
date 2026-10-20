@@ -21,12 +21,12 @@
                     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-user">
                         
                       
-                      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-transparent md:flex-row md:space-x-20 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent">
+                      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-transparent md:flex-row md:space-x-15 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent">
                           <li>
-                            <a href="#" class="block py-2 px-3 text-white bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0" aria-current="page">Home</a>
+                            <RouterLink to="/" class="block py-2 px-3 text-white bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0" >Home</RouterLink>
                           </li>
                           <li>
-                            <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">About</a>
+                           <RouterLink to="/about" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">About</RouterLink>
                           </li>
                           <li>
                             <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Services</a>
@@ -45,12 +45,12 @@
                         <div class="flex flex-row h-150 w-screen ">
                           <section class="flex flex-col h-120 md:h-full  w-xl " >
                               <div class="flex h-full w-full flex-col items-start justify-center gap-4 px-6 text-center font-sans">
-                                <h1 class="mb-4 text-8xl font-semibold tracking-tight">
-                                  <span class="text-green-400">Hi, I'm</span>
-      
+                                <h1 class="mb-4 text-7xl font-semibold tracking-tight">
+                                  <span class="text-green-400" ref="el"></span>
+                                
                                 </h1>
-                                <h1 class="mb-4 text-6xl font-bold text-blue-200"> Francis</h1>
-                               
+                                <h1 class="mb-4 text-5xl font-bold text-blue-400"> Francis</h1>
+                                <p class="text-2xl  font-semibold text-white ">I'm a web developer passionate about building modern, responsive, and user-friendly websites with clean code and creative design.</p>
                               </div>
                             </section>
                           <section class="flex flex-col h-150 w-auto content-center md:h-full " >
@@ -59,6 +59,7 @@
                                
                               </div>
                             </section>
+                            
                         </div>
                         
                     </div>
@@ -73,3 +74,22 @@
 
  
 </template>
+
+<script setup>
+import { ref, onMounted, onBeforeUnmount } from 'vue'
+import Typed from 'typed.js'
+
+const el = ref(null)
+let typed
+
+onMounted(() => {
+  typed = new Typed(el.value, {
+    strings: ["Welcome","Hi!, I'm " ],
+    typeSpeed: 50,
+    backSpeed: 30,
+    loop: true
+  })
+})
+
+onBeforeUnmount(() => typed?.destroy())
+</script>

@@ -7,7 +7,7 @@
         
  
     
-        <div class="flex items-center justify-center max-w-screen-3xl  flex-wrap  mx-auto p-4 bg-transparent  backdrop-blur-[11px] backdrop-saturate-[100%] border border-b-transparent border-t-transparent border-l-transparent border-r-transparent rounded-t-[16px] shadow-[0_8px_32px_0_rgba(0,0,0,0.2)]">
+        <div class="flex items-center justify-center max-w-screen-3xl w-auto  flex-wrap  mx-auto p-4 bg-transparent  backdrop-blur-[11px] backdrop-saturate-[100%] border border-b-transparent border-t-transparent border-l-transparent border-r-transparent rounded-t-[16px] shadow-[0_8px_32px_0_rgba(0,0,0,0.2)]">
                  
                
             <div class="flex flex-col items-center justify-center w-screen h-screen mx-4 ">
@@ -42,17 +42,23 @@
                       
                       </div>
                     </nav>
-                        <div class="flex flex-row h-150 w-auto border border-r-white/12">
-                          <div class="flex flex-col items-center justify-center p-4 font-sans ">
-                            <h5 class="mb-3 text-3xl font-semibold tracking-tight text-heading leading-8">Noteworthy technology acquisitions 2021</h5>
-                            <p class="text-body">Here are the biggest technology acquisitions of 2025 so far, in reverse chronological order.</p>
-
-                          </div>
-                               <div class="flex flex-col items-center justify-start p-4 font-sans ">
-                                <h5 class="mb-3 text-3xl font-semibold tracking-tight text-heading leading-8">Noteworthy technology acquisitions 2021</h5>
-                                <p class="text-body">Here are the biggest technology acquisitions of 2025 so far, in reverse chronological order.</p>
-
+                        <div class="flex flex-row h-150 w-screen ">
+                          <section class="flex flex-col h-120 md:h-full  w-xl " >
+                              <div class="flex h-full w-full flex-col items-start justify-center gap-4 px-6 text-center font-sans">
+                                <h1 class="mb-4 text-8xl font-semibold tracking-tight">
+                                  <span class="text-green-400">Hi, I'm</span>
+      
+                                </h1>
+                                <h1 class="mb-4 text-6xl font-bold text-blue-200"> Francis</h1>
+                               
                               </div>
+                            </section>
+                          <section class="flex flex-col h-150 w-auto content-center md:h-full " >
+                              <div class="flex h-full w-full flex-col items-start justify-center gap-8 px-6  text-center font-sans" >
+                                  <img src="../assets/avatar2.png" class="">
+                               
+                              </div>
+                            </section>
                         </div>
                         
                     </div>

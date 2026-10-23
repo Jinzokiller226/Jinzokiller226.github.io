@@ -3,100 +3,66 @@
 </script>
 
 <template>
+
+       
+                 <!-- Main Contained Wrapper: Centered on screen, fixed layout boundary, prevents any content spilling out -->
+<div class="relative w-full max-w-7xl mx-auto h-[600px] max-h-screen overflow-hidden flex items-center justify-center bg-transparent px-6">
   
-        
- 
+  <!-- Side-by-Side Flex Layout Container -->
+  <section class="flex flex-col md:flex-row items-center justify-between w-full h-full py-8 gap-8 md:gap-12">
     
-        <div class="flex items-center justify-center max-w-screen-3xl w-auto  flex-wrap  mx-auto p-4 bg-transparent  backdrop-blur-[11px] backdrop-saturate-[100%] border border-b-transparent border-t-transparent border-l-transparent border-r-transparent rounded-t-[16px] shadow-[0_8px_32px_0_rgba(0,0,0,0.2)]">
-                 
-               
-            <div class="flex flex-col items-center justify-center w-screen h-screen mx-4 ">
-               
-                 
-    
-                    <div class="max-w-screen-xl flex flex-wrap items-center justify-end mx-auto p-4 bg-transparent backdrop-blur-[11px] backdrop-saturate-[100%]  rounded-[16px] shadow-[0_8px_32px_0_rgba(0,0,0,0.2)]">
-                      <nav class="bg-transparent w-screen z-20 top-0 start-0 ">
-                    <div class="max-w-screen-xl flex flex-wrap items-center justify-end mx-auto p-4 bg-transparent">
-                      
-                    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-user">
-                        
-                      
-                      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-transparent md:flex-row md:space-x-15 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent">
-                          <li>
-                            
-                            <RouterLink to="/" class="block py-2 px-2 text-white bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0" >
-                              <svg class="inline-flex  text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 12 8-8 8 8M6 10.5V19a1 1 0 0 0 1 1h3v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h3a1 1 0 0 0 1-1v-8.5"/>
-                            </svg>Home</RouterLink>
-                          </li>
-                          <li>
-                           <RouterLink to="/about" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">
-                            <svg class="inline-flex text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.03v13m0-13c-2.819-.831-4.715-1.076-8.029-1.023A.99.99 0 0 0 3 6v11c0 .563.466 1.014 1.03 1.007 3.122-.043 5.018.212 7.97 1.023m0-13c2.819-.831 4.715-1.076 8.029-1.023A.99.99 0 0 1 21 6v11c0 .563-.466 1.014-1.03 1.007-3.122-.043-5.018.212-7.97 1.023"/>
-                              </svg>
-
-
-                            Experience</RouterLink>
-                          </li>
-                          <li>
-                            <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">
-                              <svg class="inline-flex text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.99999 10.8571 12 13.1428m-4.00001-2.2857L4 13.1428m3.99999-2.2857.00004-4.57139M12 13.1428v4.5715m0-4.5715-4.00001 2.2857M12 13.1428l4-2.2857m-4 2.2857V8.57143m0 4.57137 4 2.2858m-4 2.2857L7.99999 20M12 17.7143 16 20m-8.00001 0L4 17.7143v-4.5715M7.99999 20v-4.5715M4 13.1428l3.99999 2.2857M16 6.28571 12 4 8.00003 6.28571m7.99997 0v4.57139m0-4.57139-4 2.28572m4 2.28567 4 2.2858M8.00003 6.28571 12 8.57143m8 4.57147v4.5714L16 20m4-6.8571-4 2.2857M16 20v-4.5714"/>
-                            </svg>
-
-                              
-                              Techstack</a>
-                          </li>
-                          <li>
-                            <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">
-                              <svg class="inline-flex text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                    <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M10 3v4a1 1 0 0 1-1 1H5m14-4v16a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7.914a1 1 0 0 1 .293-.707l3.914-3.914A1 1 0 0 1 9.914 3H18a1 1 0 0 1 1 1Z"/>
-                                  </svg>
-
-                              
-                              Projects</a>
-                          </li>
-                          <li>
-                            <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">
-                              <svg class="inline-flex text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.427 14.768 17.2 13.542a1.733 1.733 0 0 0-2.45 0l-.613.613a1.732 1.732 0 0 1-2.45 0l-1.838-1.84a1.735 1.735 0 0 1 0-2.452l.612-.613a1.735 1.735 0 0 0 0-2.452L9.237 5.572a1.6 1.6 0 0 0-2.45 0c-3.223 3.2-1.702 6.896 1.519 10.117 3.22 3.221 6.914 4.745 10.12 1.535a1.601 1.601 0 0 0 0-2.456Z"/>
-                              </svg>
-
-
-                              Contact</a>
-                          </li>
-                        </ul>
-                      </div>
-                      
-                      </div>
-                    </nav>
-                        <div class="flex flex-row h-150 w-screen ">
-                          <section class="flex flex-col h-120 md:h-full  w-xl " >
-                              <div class="flex h-full w-full flex-col items-start justify-center gap-4 px-6 text-center font-sans">
-                                <h1 class="mb-4 text-7xl font-semibold tracking-tight">
+    <!-- Left Side: Text Column -->
+    <div class="flex flex-col items-start justify-center flex-1 text-left font-sans gap-3 h-full">
+      <!-- Typing/Intro Heading -->
+     
+                               <h1 class="mb-4 text-7xl font-semibold tracking-tight">
                                   <span class="text-green-400" ref="el"></span>
                                 
                                 </h1>
-                                <h1 class="mb-4 text-5xl font-bold text-blue-400"> Francis</h1>
-                                <p class="text-2xl  font-semibold text-white ">I'm a web developer passionate about building modern, responsive, and user-friendly websites with clean code and creative design.</p>
-                              </div>
-                            </section>
-                          <section class="flex flex-col h-150 w-auto content-center md:h-full " >
-                              <div class="flex h-full w-full flex-col items-start justify-center gap-8 px-6  text-center font-sans" >
-                                  <img src="../assets/avatar2.png" class="">
-                               
-                              </div>
-                            </section>
-                            
-                        </div>
-                        
-                    </div>
-                 
-              </div>
-                  
-          </div>
-           
+                                
+                                
     
+      <!-- Name Display -->
+      <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#3B82F6] mb-1">
+        Francis Agustin
+      </h2>
+      <!-- Description Paragraph -->
+      <p class="text-base sm:text-lg md:text-xl text-gray-200 max-w-md leading-relaxed overflow-hidden text-ellipsis">
+        I'm a web developer passionate about building modern, responsive, and user-friendly websites with clean code and creative design.
+      </p>
+      <div class="flex flex-row w-auto gap-8">
+      <a href="https://www.linkedin.com/in/francis-agustin-venas-b32a00120/" target="_blank" rel="noopener noreferrer" class="text-white bg-transparent box-border border border-transparent hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 shadow-xs font-medium leading-5 rounded-lg text-sm px-4 py-2.5 focus:outline-none">
+                                      <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+        <path fill-rule="evenodd" d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z" clip-rule="evenodd"/>
+        <path d="M7.2 8.809H4V19.5h3.2V8.809Z"/>
+      </svg>
+          </a>
+          <a href="https://github.com/jinzokiller226" target="_blank" rel="noopener noreferrer"  class="text-white bg-transparent box-border border border-transparent hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 shadow-xs font-medium leading-5 rounded-lg text-sm px-4 py-2.5 focus:outline-none">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z" clip-rule="evenodd"/>
+            </svg>
+
+          </a>
+      </div>
+                                
+
+                                  
+      
+
+    </div>
+
+    <!-- Right Side: Avatar Image Column -->
+    <div class="flex items-center justify-center flex-1 w-full h-full max-h-[45%] md:max-h-full overflow-hidden">
+      <img 
+        src="../assets/avatar2.png" 
+        alt="Francis Avatar" 
+        class="w-full h-full object-contain max-h-[250px] sm:max-h-[300px] md:max-h-[500px]"
+      />
+    </div>
+
+  </section>
+</div>
+                   
     
    
 
@@ -115,7 +81,7 @@ onMounted(() => {
     strings: ["Welcome","Hi!, I'm " ],
     typeSpeed: 50,
     backSpeed: 30,
-    loop: true
+    loop: false
   })
 })
 
